@@ -7,7 +7,8 @@ const windowIcons = {
   snake: "assets/images/snake-pixel-art-removebg.png",
   dos: "assets/images/Program Folder (16x16px & 32x32px).ico",
   blog: "assets/images/Book 2.ico",
-  wallpapers: "assets/images/wallpaper.ico"
+  wallpapers: "assets/images/wallpaper.png",
+  "case-files": "assets/images/Documents Folder.ico"
 };
 let portfolioData = {};
 // Fetch data once when page loads
@@ -110,6 +111,39 @@ if (windowName === "projects") {
       winBody.innerHTML = `<p>Loading contact info...</p>`;
     }
   }
+  // --- NEW CASE FILES SECTION ---
+  if (windowName === "case-files") {
+    if (portfolioData.caseFiles) {
+      winBody.innerHTML = ''; // Clear previous content
+
+      portfolioData.caseFiles.forEach(category => {
+        // Create a heading for the category
+        const categoryTitle = document.createElement('h3');
+        categoryTitle.textContent = category.category;
+        winBody.appendChild(categoryTitle);
+
+        // Create a list for the items in this category
+        const itemList = document.createElement('ul');
+        
+        category.items.forEach(item => {
+          // Create each item as a list item
+          const listItem = document.createElement('li');
+          listItem.style.marginBottom = '10px'; // Add some spacing
+
+          // Use innerHTML for simple title and link
+          listItem.innerHTML = `
+            <a href="${item.link}" target="_blank">${item.title}</a>
+            <p style="margin: 2px 0 0 0; font-size: 12px;">${item.description}</p>
+          `;
+          itemList.appendChild(listItem);
+        });
+
+        winBody.appendChild(itemList);
+      });
+    } else {
+      winBody.innerHTML = `<p>Loading case files...</p>`;
+    }
+  }
 }
 let highestZIndex = 100; // for z-index
 let clippyIndex = 0;
@@ -135,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Make windows draggable
   const desktop = document.querySelector('.crt-main');
-  ['about', 'projects', 'certificates', 'contact', 'paint', 'dos', 'blog', 'snake','wallpapers'].forEach(id => {
+  ['about', 'projects', 'certificates', 'contact', 'paint', 'dos', 'blog', 'snake','wallpapers','case-files'].forEach(id => {
     const win = document.getElementById(id + '-window');
     if (win) makeDraggable(win, desktop);
   });

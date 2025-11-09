@@ -50,5 +50,118 @@
       {"label": "LinkedIN", "url": "https://www.linkedin.com/in/kavyansh-g-71ab9a363/"},
       {"label": "Github", "url": "https://github.com/krishpyyy-pt"}
     ]
-  }
+  },
+
+"caseFiles": [
+    {
+      "category": "Incident Response & Analysis",
+      "items": [
+        {
+          "title": "Incident Handler's Journal",
+          "description": "Documented mock incidents (Ransomware, Phishing) using the 5 W's, playbooks, and file analysis.",
+          "link": "assets/docs/Cert6_portfolio_act_Incident_handler's_journal(final_ver.).pdf"
+        },
+        {
+          "title": "Incident Report: DDoS Attack",
+          "description": "Analyzed a DDoS attack, documenting the incident using the NIST framework (Identify, Protect, Detect, Respond, Recover).",
+          "link": "assets/docs/portfolio_Acti_certi3.pdf"
+        },
+        {
+          "title": "Incident Report: Web App PII Leak",
+          "description": "Analyzed a final report for a forced browsing vulnerability, identifying the timeline, root cause, and remediation steps.",
+          "link": "assets/docs/Cert6_mod3_act3_Review_final_report.pdf"
+        },
+        {
+          "title": "Incident Report: Brute Force & Malware",
+          "description": "Investigated an incident involving a brute-forced admin password and subsequent malware injection via HTTP.",
+          "link": "assets/docs/Security_incident_report_cer3_mod4_acti1.pdf"
+        },
+        {
+          "title": "Network Traffic Analysis (DoS)",
+          "description": "Analyzed ICMP and DNS traffic to identify a Denial of Service (DoS) attack causing a 'port unreachable' error.",
+          "link": "assets/docs/Cybersecurity incident report network traffic analysis(mine).pdf"
+        },
+        {
+          "title": "SOC Alert Ticket: Phishing",
+          "description": "Triaged and escalated a medium-severity phishing alert, recording the malicious file hash and email headers.",
+          "link": "assets/docs/Cert6_Mod3_act2_Alert_ticket.pdf"
+        },
+        {
+          "title": "Threat Intel: Pyramid of Pain",
+          "description": "Analyzed malicious file indicators (hash, IP, domain) from a Trojan and mapped them to the Pyramid of Pain.",
+          "link": "assets/docs/Cert6_Mod3_Pyramid_of_Pain_act.pdf"
+        },
+        {
+          "title": "Risk Analysis: Malicious USB",
+          "description": "Assessed the risk of a dropped USB drive, considering the attacker mindset, PII exposure, and physical security vectors.",
+          "link": "assets/docs/CErt5_Activi2_Parking_lot _USB_exercise.pdf"
+        }
+      ]
+    },
+    {
+      "category": "GRC (Risk, Compliance & Auditing)",
+      "items": [
+        {
+          "title": "IT Audit Scope & Goals",
+          "description": "Defined the scope, goals, and risk assessment for an internal IT audit based on NIST CSF, GDPR, and PCI DSS compliance.",
+          "link": "assets/docs/Audit-Scope-and-Goals.docx"
+        },
+        {
+          "title": "Vulnerability Assessment Report",
+          "description": "Authored a formal vulnerability assessment, identifying threats (Hackers, Insider Threat), calculating risk, and proposing remediation.",
+          "link": "assets/docs/Cert5_portfolio_act_vulne_asses.pdf"
+        },
+        {
+          "title": "Risk Register (Banking)",
+          "description": "Created a risk register for a bank, scoring risks (Likelihood x Severity) for assets like 'Funds' and 'Financial records'.",
+          "link": "assets/docs/Risk_register_cert5_act2.pdf"
+        },
+        {
+          "title": "Security Hardening Report",
+          "description": "Recommended security hardening techniques (Strong Passwords, Firewall Config, MFA) to remediate specific vulnerabilities.",
+          "link": "assets/docs/Security risk assessment report_cer3_mod4_acti2.pdf"
+        },
+        {
+          "title": "Threat Model (PASTA)",
+          "description": "Conducted a PASTA threat model for a new application, analyzing its technical scope (SQL, API) and identifying vulnerabilities.",
+          "link": "assets/docs/Cert5_Mod4_ActivityPASTA_worksheet.pdf"
+        },
+        {
+          "title": "Worksheet: Data Leak & Least Privilege",
+          "description": "Analyzed an internal data leak, identified the root cause (access not revoked), and tied it to the NIST SP 800-53: AC-6 control.",
+          "link": "assets/docs/Activity_Data_leak_worksheet_cert5_mod2_act1.pdf"
+        },
+        {
+          "title": "Worksheet: Access Control (IAM)",
+          "description": "Audited an authentication incident involving an ex-contractor, identifying IAM issues and recommending account expiration policies.",
+          "link": "assets/docs/Access_control_worksheet_cert5_mod2_act4.pdf"
+        },
+        {
+          "title": "Home Asset Inventory",
+          "description": "Drafted an asset inventory for a home network, categorizing assets (router, laptop) and data sensitivity.",
+          "link": "assets/docs/Home_asset_inventory_cer5_mod1.pdf"
+        }
+      ]
+    },
+    {
+      "category": "Technical Skills (SOC & Scripting)",
+      "items": [
+        {
+          "title": "SQL for Log Analysis",
+          "description": "Wrote multiple SQL queries with WHERE, AND, OR, NOT, and LIKE to filter security logs for suspicious login attempts.",
+          "link": "assets/docs/Filtering_in_Sql_port_act2_cert4.pdf"
+        },
+        {
+          "title": "Python Script: Update IP Allow List",
+          "description": "Wrote a Python script to read, parse, and update an IP allow list file, removing unauthorized addresses.",
+          "link": "assets/docs/Cert7_portfolio_act_Algorithm_for_file_updates_in_Python.pdf"
+        },
+        {
+          "title": "Linux File Permissions",
+          "description": "Used `chmod` commands (e.g., `o-w`, `g-x`) to modify user, group, and other permissions on files and directories.",
+          "link": "assets/docs/File permissions in Linux_cert4_port_act.pdf"
+        }
+      ]
+    }
+  ]
 }

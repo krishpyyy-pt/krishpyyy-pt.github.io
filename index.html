@@ -32,6 +32,11 @@
         <div class="icon-label">Contact Me</div>
       </div>
 
+      <div class="desktop-icon" style="top: 380px; left: 20px;" onclick="openWindow('case-files')">
+        <img src="assets/images/Documents Folder.ico" alt="Case Files Icon" style="height: 45px; width: 45px;">
+        <div class="icon-label">Case Files</div>
+      </div>
+
       <!-- About Window -->
       <div class="window" id="about-window">
         <div class="title-bar">
@@ -91,6 +96,19 @@
         <!--<p>Contact me at: xyz@example.com 📧</p>-->
         </div>
       </div>
+      <!-- Case File Window -->
+       <div class="window" id="case-files-window" style="width: 500px; height: 400px;">
+        <div class="title-bar">
+          <div class="title-bar-text">Case Files</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeWindow('case-files')"></button>
+            <button aria-label="Maximize" onclick="maximizeWindow('case-files')"></button>
+            <button aria-label="Close" onclick="closeWindow('case-files')"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          </div>
+      </div>
 
       <!-- Wallpapers Window -->
       <div class="window" id="wallpapers-window" style="width: 350px; height: 250px;">
@@ -110,11 +128,11 @@
               <span>Clouds</span>
             </div>
             <div class="wallpaper-option" onclick="changeWallpaper('assets/images/Wallpaper/wallpaper3.webp')">
-              <img src="assets/images/Wallpaper/wallpaper3.webp" alt="Wallpaper 2">
+              <img src="assets/images/Wallpaper/wallpaper3_Thumb.webp" alt="Wallpaper 2">
               <span>Vintage</span>
             </div>
             <div class="wallpaper-option" onclick="changeWallpaper('#008080')">
-              <img src="assets/images/Wallpaper/default_wallpaper.png" alt="Default">
+              <img src="assets/images/Wallpaper/default_wallpaper_Thumb.png" alt="Default">
               <span>Default</span>
             </div>
           </div>
@@ -195,9 +213,10 @@
             <button aria-label="Close" onclick="closeWindow('blog')"></button>
           </div>
         </div>
-        <div class="window-body">
-          <p>My personal blog is coming soon. Stay tuned for articles on tech, projects, and more! 🚀</p>
-        </div>
+       <div class="window-body">
+        <p>Welcome to my blog! You can read my latest articles on tech and security.</p>
+        <a href="https://pingmymind.tech" target="_blank">Click here to read my blog</a>
+      </div>
       </div>
        <!-- Recycle Bin Window -->
       <div class="window hidden" id="recycle-window" style="width: 550px; height: 300px;">
@@ -254,7 +273,8 @@
       </div>
 
 
-    </div> <!-- desktop-area ends -->
+    </div>
+     <!-- desktop-area ends -->
 
     <!-- Taskbar -->
     <div class="taskbar">
@@ -288,9 +308,10 @@
             <div class="start-item" onclick="openWindow('dos')"><img src="assets/images/Program Folder (16x16px & 32x32px).ico"> MS-DOS Prompt</div>
             <div class="start-item" onclick="openWindow('snake')"><img src="assets/images/snake-pixel-art-removebg.png"> Snake Game</div>
             <div class="start-item" onclick="openWindow('recycle')"><img src="assets/images/Recycle.ico"> Recycle Bin</div>
+            <div class="start-item" onclick="openWindow('case-files')"><img src="assets/images/Documents Folder.ico" style="height: 22px;width:22px;"> Case Files</div>
           </div>
         </div>
-        <div class="start-item" onclick="openWindow('wallpapers')"><img src="assets/images/Wallpaper/default_wallpaper.png" style="height: 20px;width: 20px;"> Wallpapers</div>
+        <div class="start-item" onclick="openWindow('wallpapers')"><img src="assets/images/wallpaper.png" style="height: 28px;width: 21px;">Wallpapers</div>
         <div class="start-item" onclick="openWindow('blog')"><img src="assets/images/Book 2.ico" style="height: 20px;width: 20px;"> Blog</div>
         <hr class="start-divider">
         <div class="start-item" onclick="suspendSystem()"><img src="assets/images/suspend.ico" style="height: 25px;width: 25px;"> Suspend</div>
