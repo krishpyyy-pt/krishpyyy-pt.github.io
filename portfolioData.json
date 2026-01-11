@@ -7,22 +7,30 @@
       {"label": "LinkedIN", "url": "https://www.linkedin.com/in/kavyansh-g-71ab9a363/"}
     ]
   },
-
   "projects": [
+    {
+      "name":"Fruity Cipher",
+      "description":"Engineered 'Fruity Cipher,' a custom 168-bit polymorphic block cipher. The algorithm implements a 'dynamic opcode' architecture where mathematical operations (Rotation, Permutation, XOR, and Modular Arithmetic) are randomized per block based on a generated 'Recipe.' It features a custom 24-bit integer processing pipeline, a global 'Banana' whitening phase for diffusion, and Cipher Block Chaining (CBC) for avalanche effects. The system is designed as a Hybrid Cryptosystem, using RSA to securely encapsulate the polymorphic execution path (the Recipe).",
+      "technologies": ["Python","JSON","Fernet","RSA"]
+    },
+    {
+      "name":"Cowrie SSH Honeypot Experiment",
+      "description":"Deployed and monitored a high-interaction Cowrie honeypot on Microsoft Azure to capture and analyze real-world SSH brute force vectors. The experiment utilized Python and Plotly for data visualization, processing over 54,000 events in 48 hours to map global attack origins. Key analysis identified specific crypto-mining signatures (Outlaw group) and IoT botnet patterns, providing concrete evidence against security by obscurity.",
+      "technologies":["Python","Plotly for visualization"],
+      "link":"https://pingmymind.tech/posts/2025-11-23-i-left-port-22-open-on-my-server-heres-who-showed-up/"
+    },
     {
       "name": "Lino(The AI Gatekeeper)",
       "description": "Engineered 'Lino,' a proof-of-concept, next-generation security gateway designed to protect web applications and servers. The system intercepts incoming requests, leveraging the Gemini AI API to perform real-time content analysis and block potential threats based on scan results. Future development is focused on creating a custom-trained model using public cybersecurity data for more advanced, proactive threat detection.",
       "technologies": ["Python", "Gemini AI API", "Flask", "Data Analysis"],
-      "link": "--" 
+      "link": "https://github.com/krishpyyy-pt/Lino" 
     },
     {
       "name": "My retro Win95 style Website",
       "description": "Designed and developed this fully interactive portfolio from scratch to create a unique and memorable user experience, styled after the Windows 95 operating system. The desktop environment is built with vanilla JavaScript, HTML, and CSS, featuring a multi-window interface, draggable and resizable windows, and dynamically loaded content from a central JSON file.",
       "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
-      "link": "--" 
-    }
-  ],
-
+      "link": "https://github.com/krishpyyy-pt/krishpyyy-pt.github.io" 
+    }],
   "certificates": [
     {
       "title": "Google cybersecurity Certificate",
