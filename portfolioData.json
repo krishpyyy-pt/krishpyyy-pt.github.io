@@ -13,7 +13,7 @@
       "description":"Engineered 'Fruity Cipher,' a custom 168-bit polymorphic block cipher. The algorithm implements a 'dynamic opcode' architecture where mathematical operations (Rotation, Permutation, XOR, and Modular Arithmetic) are randomized per block based on a generated 'Recipe.' It features a custom 24-bit integer processing pipeline, a global 'Banana' whitening phase for diffusion, and Cipher Block Chaining (CBC) for avalanche effects. The system is designed as a Hybrid Cryptosystem, using RSA to securely encapsulate the polymorphic execution path (the Recipe).",
       "technologies": ["Python","JSON","Fernet","RSA"],
       "link":"",
-      "linktext":""
+      "linktext":"View code on Github"
     },
     {
       "name":"Cowrie SSH Honeypot Experiment",
