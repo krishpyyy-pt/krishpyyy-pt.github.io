@@ -63,7 +63,7 @@ if (windowName === "projects") {
 
             const link = document.createElement('a');
             link.href = p.link;
-            link.textContent = 'View on GitHub';
+            link.textContent = p.linktext || "View Code";
             link.target = '_blank'; // Good practice to open external links in a new tab
 
             // Append the new, safe elements
