@@ -809,3 +809,6 @@ b{
   width: 450px;
   height: 400px;
 }
+.content-item p {
+    white-space: pre-wrap;
+}
