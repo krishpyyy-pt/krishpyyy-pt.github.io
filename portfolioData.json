@@ -34,7 +34,7 @@
       4. Artifact Analysis: Extracted and analyzed operational telemetry, including email headers and file hashes, to accelerate threat triage and support timely incident response.",
       "technologies": ["OWASP ZAP","SHA-256","JavaScript"],
       "link":"",
-      "linktext":"",
+      "linktext":""
     },
     {
       "name":"Fruity Cipher",
