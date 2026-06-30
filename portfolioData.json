@@ -8,6 +8,32 @@
     ]
   },
   "projects": [
+   {
+      "name":"GCP-Wazuh Threat Intelligence Honeypot Pipeline",
+      "description":"Engineered a cloud-to-on-premise threat intelligence pipeline, deploying a GCP Docker honeypot that securely routed 50,000+ raw attack logs to a local Wazuh SIEM via a Tailscale mesh tunnel.
+
+1. Proactive Threat Hunting: Analyzed raw telemetry to identify advanced botnet swarms and targeted brute-force campaigns against DevSecOps infrastructure (Ansible).
+
+2. Detection Engineering: Developed custom Wazuh decoders and tailored dashboards to parse non-standard attack signatures and track payload injections.
+
+3. Post-Quantum Tracking: Successfully isolated and monitored threat actors utilizing Post-Quantum Cryptography (ML-KEM) within the pipeline.",
+      "technologies": ["GCP","Cowrie","Wazuh","Tailscale","Docker"],
+      "link":"",
+      "linktext":"View code on Github"
+    },
+    {
+      "name":"Web Application Security Testing & Hardening",
+      "description":"Proactively secured personal web infrastructure by conducting Dynamic Application Security Testing (DAST) and hardening supply chain assets against injection vectors.
+
+1. Vulnerability Assessment: Utilized OWASP ZAP to execute targeted DAST scans, proactively identifying and triaging application-layer security flaws.
+
+2. Supply Chain Hardening: Remediated missing Subresource Integrity (SRI) attributes by implementing strict cryptographic hashes to validate external CDN, assets.
+
+3. Threat Mitigation: Secured the frontend architecture against potential third-party supply chain attacks and malicious asset modifications.
+
+Artifact Analysis: Extracted and analyzed operational telemetry, including email headers and file hashes, to accelerate threat triage and support timely incident response.",
+      "technologies": ["OWASP ZAP","SHA-256","JavaScript"],
+    },
     {
       "name":"Fruity Cipher",
       "description":"Engineered 'Fruity Cipher,' a custom 168-bit polymorphic block cipher. The algorithm implements a 'dynamic opcode' architecture where mathematical operations (Rotation, Permutation, XOR, and Modular Arithmetic) are randomized per block based on a generated 'Recipe.' It features a custom 24-bit integer processing pipeline, a global 'Banana' whitening phase for diffusion, and Cipher Block Chaining (CBC) for avalanche effects. The system is designed as a Hybrid Cryptosystem, using RSA to securely encapsulate the polymorphic execution path (the Recipe).",
